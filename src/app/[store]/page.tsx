@@ -2,13 +2,14 @@
 
 import type {Schedule as ISchedule, Store} from "@/types";
 
-import {useEffect, useState} from "react";
+import {use, useEffect, useState} from "react";
 import Link from "next/link";
 
 import api from "@/api";
 import StoreCard from "@/components/StoreCard";
 
-function StoreSchedulePage({params}: {params: {store: string}}) {
+function StoreSchedulePage(props: {params: Promise<{store: string}>}) {
+  const params = use(props.params);
   const [store, setStore] = useState<Store | null>(null);
   const [visitors, setVisitors] = useState<number>(0);
   const [schedule, setSchedule] = useState<ISchedule[]>([]);

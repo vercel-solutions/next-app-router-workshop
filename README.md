@@ -27,4 +27,4 @@ Also, the information of the store won't change. We also want to be sure the rat
 * Re-implement the `visitors` endpoint as a route handler using a DB.
 
 ## Resources
-You can find some snippets in the [snippets](./snippets) folder or slides in [here](https://docs.google.com/presentation/d/1UIscklSUjKq2DbRLT4qAGHbXEYhUZbEZs2BragMElfg/edit?usp=sharing).
+You can find the workshop slides in [here](https://docs.google.com/presentation/d/1CUSGv2dpnfdj5i17lLEg1GKKltJytZK-CzYBDmleHwE).

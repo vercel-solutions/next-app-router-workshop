@@ -2,14 +2,15 @@
 
 import type {Store} from "@/types";
 
-import {useEffect, useState} from "react";
+import {use, useEffect, useState} from "react";
 import Link from "next/link";
 
 import StoreCard from "@/components/StoreCard";
 import api from "@/api";
 import Rating from "@/components/Rating";
 
-function StoreRatingPage({params}: {params: {store: string}}) {
+function StoreRatingPage(props: {params: Promise<{store: string}>}) {
+  const params = use(props.params);
   const [store, setStore] = useState<Store | null>(null);
   const [visitors, setVisitors] = useState<number>(0);
   const [rating, setRating] = useState<number>(0);
