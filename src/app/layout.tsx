@@ -30,7 +30,7 @@ function RootLayout({children}: {children: React.ReactNode}) {
           <Card>
             <div className="flex flex-row items-center justify-between p-3 text-white/70">
               <div className="flex flex-row items-center gap-1">
-                <span>By</span> <Image alt="Vercel Logo" height={16} src="/vercel.svg" width={72} />
+                <span>By</span> <Image alt="Vercel Logo" height={16} src="/vercel.svg" width={16} />
               </div>
               <div className="flex flex-row items-center gap-1">
                 <Image alt="Next.js logo" height={32} src="/nextjs.svg" width={32} />
