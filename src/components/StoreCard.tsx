@@ -1,4 +1,4 @@
-import type {Store} from "../types";
+import type {Store} from "@/types";
 
 function StoreCard({store}: {store: Store}) {
   return (

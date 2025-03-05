@@ -1,28 +1,14 @@
-import type {AppProps} from "next/app";
-
-import {Open_Sans} from "next/font/google";
-import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 
-import Card from "../components/Card";
+import Card from "@/components/Card";
 
-import "../globals.css";
+import "@/globals.css";
 
-const opensans = Open_Sans({
-  subsets: ["latin"],
-  variable: "--font-open-sans",
-});
-
-function App({Component, pageProps}: AppProps) {
+function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <>
-      <Head>
-        <title>Next.js App Router workshop</title>
-      </Head>
-      <div
-        className={`${opensans.className} mx-auto flex min-h-screen max-w-4xl flex-col items-stretch gap-6 p-6 font-sans`}
-      >
+    <html lang="en">
+      <body className="mx-auto flex min-h-screen max-w-4xl flex-col items-stretch gap-6 p-6 font-sans">
         <header>
           <Card>
             <Link href="/">
@@ -36,9 +22,7 @@ function App({Component, pageProps}: AppProps) {
 
         <main className="flex-1">
           <Card>
-            <section className="p-4">
-              <Component {...pageProps} />
-            </section>
+            <section className="p-4">{children}</section>
           </Card>
         </main>
 
@@ -46,7 +30,7 @@ function App({Component, pageProps}: AppProps) {
           <Card>
             <div className="flex flex-row items-center justify-between p-3 text-white/70">
               <div className="flex flex-row items-center gap-1">
-                <span>By</span> <Image alt="Vercel Logo" height={16} src="/vercel.svg" width={16} />
+                <span>By</span> <Image alt="Vercel Logo" height={16} src="/vercel.svg" width={72} />
               </div>
               <div className="flex flex-row items-center gap-1">
                 <Image alt="Next.js logo" height={32} src="/nextjs.svg" width={32} />
@@ -55,9 +39,9 @@ function App({Component, pageProps}: AppProps) {
             </div>
           </Card>
         </footer>
-      </div>
-    </>
+      </body>
+    </html>
   );
 }
 
-export default App;
+export default RootLayout;
