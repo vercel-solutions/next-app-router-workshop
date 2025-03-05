@@ -18,7 +18,7 @@ function App({Component, pageProps}: AppProps) {
   return (
     <>
       <Head>
-        <title>Next.js app directory workshop</title>
+        <title>Next.js App Router workshop</title>
       </Head>
       <div
         className={`${opensans.className} mx-auto flex min-h-screen max-w-4xl flex-col items-stretch gap-6 p-6 font-sans`}
@@ -50,7 +50,7 @@ function App({Component, pageProps}: AppProps) {
               </div>
               <div className="flex flex-row items-center gap-1">
                 <Image alt="Next.js logo" height={32} src="/nextjs.svg" width={32} />
-                <p>App Directory workshop</p>
+                <p>App Router workshop</p>
               </div>
             </div>
           </Card>

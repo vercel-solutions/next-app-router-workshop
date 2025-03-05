@@ -1,9 +1,9 @@
-# Next.js workshop - App dir
-During this workshop we will learn Next.js app dir basics, including:
+# Next.js workshop - App Router
+During this workshop we will learn Next.js App Router basics, including:
 
 * Streaming and suspense
 * Nested layouts
-* New app dir defaults
+* New App Router defaults
 * Comparison with pages
 * Accessing request object
 * Data fetching
@@ -12,7 +12,7 @@ During this workshop we will learn Next.js app dir basics, including:
 And more.
 
 ## Exercises
-Our team decided to migrate this app from the Next.js basics workshop, from pages to app dir. You were assigned for the task.
+Our team decided to migrate this app from the Next.js basics workshop, from pages to App Router. You were assigned for the task.
 
 Don't forget to:
 * Pass a locale to the Schedule component
