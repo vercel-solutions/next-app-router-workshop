@@ -1,5 +1,5 @@
-- [ ] Have at least one error page
 - [ ] Index throws a CORS error
+- [ ] Have at least one error page
 - [ ] Show list of stores on index using server components
 - [ ] Use Open Sans font on body
 - [ ] Move to the server whatever is possible and relevant
