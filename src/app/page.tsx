@@ -4,8 +4,9 @@ import {useEffect, useState} from "react";
 import Link from "next/link";
 
 import {Store} from "@/types";
-import StoreCard from "@/components/StoreCard";
 import api from "@/api";
+
+import StoreCard from "@/components/StoreCard";
 
 function HomePage() {
   const [stores, setStores] = useState<Store[]>([]);

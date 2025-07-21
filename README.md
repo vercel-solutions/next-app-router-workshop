@@ -12,7 +12,9 @@ During this workshop we will learn Next.js App Router basics, including:
 And more.
 
 ## Exercises
-Our team decided to migrate this app from the Next.js basics workshop, from pages to App Router. You were assigned for the task.
+Our team decided to migrate this app from the Next.js basics workshop, from pages to App Router. They did their best and gave you a Next.js with app router application but it's not following the best practices. You were assigned for the task.
+
+You should make this app work as you think it's the best way to do it. Add comments to your code to explain your choices.
 
 Don't forget to:
 * Pass a locale to the Schedule component
